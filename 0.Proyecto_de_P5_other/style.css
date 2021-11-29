@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**--------no me pinchan las variables---------------------------------**/
+:root {
+    --btn-color: rgb(255, 255, 255);
+    --btn-color-hover: rgb(184, 184, 184);
+}
+
+body {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(175, 175, 175), rgb(255, 255, 255));
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+
+/*Navbar
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(242, 242, 243, 0.726);
+    font-family: sans-serif;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  Change the link color to #111 (black) on hover 
+  li a:hover {
+    background-color:  rgb(203, 203, 212);
+}
+
+*/
+
+
+
+.header {
+    z-index: 100;
+    background-color: ghostwhite;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 8px 2px 26px -12px rgba(0, 0, 0, 0.76);
+}
+
+
+
+nav {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 200px;
+}
+
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 130px;
+
+}
+
+.nav li {
+    float: left;
+
+}
+
+.nav a {
+    margin-left: 20px;
+    line-height: 70px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav a:hover {
+
+    color: rgb(0, 0, 141);
+}
+
+.header h2 {
+    margin-top: 25px;
+    margin-left: 20px;
+    size: 18px;
+    color: rgb(0, 0, 141);
+}
+
+
+
+
+
+
+
+/*otra talla, lo de pARALLAX*/
+.slider {
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: calc(50% - 400px);
+
+}
+
+
+.title {
+    font-size: 44px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.boton a {
+    text-decoration: none;
+    padding: 15px 44px;
+    background: black;
+    color: white;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/*
+.elements {
+     z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+}*/
+
+.recomendados h2{
+    text-align: center;
+    margin:10px auto;
+}
+/*Elements*/
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+
+}
+
+.card {
+    border-radius: 3%;
+    border: 3px solid rgba(0, 0, 0, 0.952);
+    background-color: whitesmoke;   
+    width: 300px;
+    height: 300px;
+    
+    
+    flex-basis: 300px;
+    max-width: 600px;
+    margin: 10px 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 3%;
+
+}
+
+.card p {
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.card:hover {
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.452);
+}
+
+.img-card {
+    width: 400px;
+    padding-bottom: 30px;
+}
+
+.card-plus{
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:50% ;
+}
+.card-plus p{
+    position: relative;
+    top: 200px;
+}
+
+/* boton q nose si poner
+.card-button{
+    margin: auto;
+}
+.card-button a{
+    border:1px solid black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background:rgba(255, 255, 255, 0);
+    color: black;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+
+*/
+
+
+
+
+.text {
+    width: 80%;
+    margin: auto;
+}
+
+.parallax {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(50vh - 50px);
+}
+
+.text-2 {
+    color: whitesmoke;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+
+    font-size: 24px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 65%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.795);
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.432);
+
+}
+
+.contact-form h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+    padding: 10px;
+    border-style: solid;
+}
+
+/**----Aqui no me pinchan las varibles**/
+.contact-form input[type=submit] {
+    z-index: 1000;
+    text-decoration: none;
+    width: 30%;
+    font-size: 16px;
+    background-color: var(--btn-color);
+    position: relative;
+    left: 35%;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: var(--btn-color-hover);
+}
+
+
+/**---------TALLAS NUEVAS----------------**/
+
+
+.footer {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    background-color: ghostwhite;
+
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**---------------RESPONSIVE---------------------------**/
+
+/*Exritorios muy grandes*/
+@media (min-width:1200px) {
+    .container {
+        width: 65%;
+    }
+
+}
+
+
+/*Tablets en horizontal y escritorios normales
+@media (min-width:768px) and (max-width:1199px){}
+*/
+@media (min-width:768px) {
+    .container {
+        width: 70%;
+    }
+}
+
+
+/*moviles en horizontal y tablets en vertical*/
+@media (max-width:767px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+/*moviles en vertical*/
+@media (max-width:480px) {
+    .container {
+        width: 90%;
+    }
+
+    .contact-form input[type=submit] {
+        width: 50%;
+    }
+
+}
